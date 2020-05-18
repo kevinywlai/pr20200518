@@ -3,6 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
 
+<!-- context-param -->
 	<!-- The definition of the Root Spring Container shared by all Servlets and Filters -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
@@ -10,13 +11,17 @@
 		    /WEB-INF/configs/root-context.xml
 		</param-value>
 	</context-param>
+<!-- context-param -->	
 	
 	<!-- Creates the Spring Container shared by all Servlets and Filters -->
- 
+
+<!-- listener --> 
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
-
+<!-- listener --> 
+	
+<!-- servlet --> 
 	<!-- Processes application requests -->
 	<servlet>
 		<servlet-name>appServlet</servlet-name>
@@ -26,13 +31,14 @@
 			<param-value>/WEB-INF/configs/servlet-context.xml</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
-	</servlet>
-		
+	</servlet>		
 	<servlet-mapping>
 		<servlet-name>appServlet</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-	
+<!-- servlet --> 
+
+<!-- filter --> 	
 	<!-- encodingFilter start -->	
 	<filter>  
 	    <filter-name>encodingFilter</filter-name>  
@@ -51,4 +57,5 @@
 	    <url-pattern>/*</url-pattern>  
 	</filter-mapping> 
 	<!-- encodingFilter end -->	
+<!-- filter --> 
 </web-app>
