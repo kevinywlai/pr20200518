@@ -2,11 +2,14 @@
 
 - Spring version: 3.2
 
-- Server: IBM <br>
+- Server: IBM Liberty Server<br>
 Product name: WebSphere Application Server<br>
 Product version: 18.0.0.4<br>
 Product edition: BASE_ILAN<br>
 ( Views: Servers > Liberty Server at localhost > right click > properties )<br>
+[Administering Liberty using Admin Center](https://www.ibm.com/support/knowledgecenter/SSEQTP_liberty/com.ibm.websphere.wlp.doc/ae/twlp_ui.html)<br>
+[Admin Center](https://developer.ibm.com/wasdev/downloads/#asset/features-com.ibm.websphere.appserver.adminCenter-1.0)<br>
+Directory: C:\wlp
 
 ### Snapshot
 <img src="Annotation_2020-05-18_143510.png"/>
