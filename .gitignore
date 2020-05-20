@@ -1,4 +1,8 @@
 /WebContent/WEB-INF/lib/
 /WebContent/WEB-INF/classes/com
 .classpath
-.settings/org.eclipse.wst.common.project.facet.core.xml
+/.classpath
+.classpath/
+/.classpath/
+.settings/
+/.settings/
